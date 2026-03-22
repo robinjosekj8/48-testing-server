@@ -1,0 +1,24 @@
+{
+  "_comment": "Edit the values below to control the blank screen / screen saver behaviour.",
+
+  "enabled": true,
+
+  "screensaverMode": "drift",
+  "_screensaverMode_comment": "'drift' = text drifts slowly around to protect the display (recommended). 'blank' = pure black screen.",
+
+  "driftText": "Caffe Screen",
+  "_driftText_comment": "The text that drifts around the screen in drift mode. Change to your cafe name or logo text.",
+
+  "idleTimeoutMinutes": 10,
+  "_idleTimeoutMinutes_comment": "Minutes of no interaction before the screen goes blank. Set to 0 to disable idle blanking.",
+
+  "scheduledBlankPeriods": [
+    {
+      "label": "Night off",
+      "startTime": "23:00",
+      "endTime": "07:00",
+      "enabled": true
+    }
+  ],
+  "_scheduledBlankPeriods_comment": "Time ranges (24-h HH:MM) when the screen should always be blank regardless of activity. Add more objects to the array for additional periods. Set enabled:false to skip a period without deleting it."
+}
